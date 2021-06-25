@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 
 import Home from "./Home";
 import Login from "./login";
+import Maincomponent from "../components/MainComponent";
 
 const ReactRouterSetup = () => {
   return (
@@ -18,6 +19,9 @@ const ReactRouterSetup = () => {
             </Route>
             <Route path="/profile">
               <Login />
+            </Route>
+            <Route path="/chocolate">
+              <Maincomponent />
             </Route>
           </Switch>
         </div>

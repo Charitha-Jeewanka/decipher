@@ -1,0 +1,64 @@
+:root {
+  /*blues*/
+  --clr-primary-1: #03045e;
+  --clr-primary-2: #023e8a;
+  --clr-primary-3: #0077b6;
+  --clr-primary-4: #0096c7;
+  --clr-primary-5: #0b4d8e;
+  --clr-primary-6: #48cae4;
+  --clr-primary-7: #90e0ef;
+  --clr-primary-8: #ade8f4;
+  --clr-primary-9: #caf0f8;
+
+  /*grey for fonts*/
+  --clr-fonts-1: #595959;
+  --clr-fonts-2: #6c757d;
+  --clr-fonts-3: #7f7f7f;
+  --clr-fonts-4: #a5a5a5;
+  --clr-fonts-5: #cccccc;
+
+  /*background grey*/
+  --clr-background: #f2f2f2;
+
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  --transition: all 0.3s linear;
+}
+
+.container {
+  background: var(--clr-fonts-5);
+  margin: 25px auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: var(--dark-shadow);
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+button {
+  border: 2px solid transparent;
+  background: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 20px auto;
+  text-transform: capitalize;
+}
+
+button:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
