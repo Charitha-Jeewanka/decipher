@@ -1,0 +1,74 @@
+:root {
+  /*blues*/
+  --clr-primary-1: #03045e;
+  --clr-primary-2: #023e8a;
+  --clr-primary-3: #0077b6;
+  --clr-primary-4: #0096c7;
+  --clr-primary-5: #0b4d8e;
+  --clr-primary-6: #48cae4;
+  --clr-primary-7: #90e0ef;
+  --clr-primary-8: #ade8f4;
+  --clr-primary-9: #caf0f8;
+
+  /*grey for fonts*/
+  --clr-fonts-1: #595959;
+  --clr-fonts-2: #6c757d;
+  --clr-fonts-3: #7f7f7f;
+  --clr-fonts-4: #a5a5a5;
+  --clr-fonts-5: #cccccc;
+
+  /*background grey*/
+  --clr-background: #f2f2f2;
+
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  --transition: all 0.3s linear;
+}
+
+h2 {
+  margin-top: 15px;
+  text-align: center;
+}
+h3 {
+  font-family: "dancing script";
+  font-weight: bold;
+  font-size: 4em;
+}
+
+#chocolate {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+#pasta {
+  padding: 100px 0;
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+}
+
+.chocolate-description,
+.pasta-description {
+  flex-basis: 0.5;
+  margin: 30px;
+  text-align: justify;
+}
+.chocloate-picture {
+  padding: 40%;
+  flex-basis: 0.5;
+}
+.photo {
+  width: 90%;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 0;
+  filter: brightness(0.6);
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .photo {
+    display: none;
+  }
+}
