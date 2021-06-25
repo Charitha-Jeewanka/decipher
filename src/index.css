@@ -75,6 +75,7 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-fonts-2);
+  font-family: poppins;
 }
 
 @media screen and (min-width: 800px) {

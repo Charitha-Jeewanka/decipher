@@ -26,7 +26,7 @@
   --transition: all 0.3s linear;
 }
 
-.container {
+.docker {
   background: var(--clr-fonts-5);
   margin: 25px auto;
   width: 50%;
@@ -36,10 +36,12 @@
   box-shadow: var(--dark-shadow);
 }
 
-img {
+.picture-comp {
   display: block;
   margin: auto;
+  size: 25px;
 }
+
 button {
   border: 2px solid transparent;
   background: #3498db;

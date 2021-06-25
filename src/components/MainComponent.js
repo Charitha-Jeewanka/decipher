@@ -3,7 +3,7 @@ import "../styles/maincomponent.css";
 
 const Maincomponent = () => {
   return (
-    <div className="container">
+    <div className="docker">
       <img
         src="https://unsplash.com/photos/hidES-ZSnRE"
         alt="api-not-working"
