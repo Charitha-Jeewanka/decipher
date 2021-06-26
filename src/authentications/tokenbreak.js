@@ -1,40 +1,33 @@
-import React, { useCallback, useState } from "react";
+import { Component } from "react";
 import axios from "axios";
 
 export const tokenBreak = () => {
-  const accessToken = axios
-    .get("https://ecoerest.com/api/security")
-    .then((res) => {
-      console.log(res.data);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-  const apiUrl = "https://ecoerest.com/";
+  class Token extends Component {
+    constructor(props) {
+      super(props);
 
-  const authAxios = axios.create({
-    baseURL: apiUrl,
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-    },
-  });
+      this.state = {
+        tokenState: "",
+      };
+    }
 
-  //   function App() {
-  //     const [users, setUsers] = useState([]);
-  //     const [requestError, setRequestError] = useState();
-  //     const fetchData = useCallback(async () => {
-  //       try {
-  //         const result = await authAxios.get(`/api/users`);
-  //       } catch (err) {
-  //         setRequestError(err.message);
-  //       }
-  //     });
-  //     return (
-  //       <div>
-  //         {users.map((user) => {
-  //           return <p key={user.userID}>{user.username}</p>;
-  //         })}
-  //       </div>
-  //     );
-  //   }
+    componentDidMount() {
+      axios
+        .get("https://jsonplaceholder.typicode.com/posts")
+        .then((data) => {
+          // console.log(data);
+          this.setState(
+            {
+              tokenState: data,
+            },
+            () => {
+              console.log(this.state.tokenState);
+            }
+          );
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }
 };
