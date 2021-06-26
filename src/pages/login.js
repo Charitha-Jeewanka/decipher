@@ -6,6 +6,7 @@ import axios from "axios";
 class PostForm extends Component {
   constructor(props) {
     super(props);
+    this.changeHandler = this.changeHandler.bind(this);
     this.state = {
       emailName: "",
       passName: "",
@@ -57,9 +58,10 @@ class PostForm extends Component {
     const data = {
       username: "Hashika",
       password: "Hashi",
+      role: "User",
     };
     axios
-      .post("https://ecoerest.comapi/login", data)
+      .post("https://ecoerest.com/api/login", data)
       .then((data) => {
         console.log(data);
       })

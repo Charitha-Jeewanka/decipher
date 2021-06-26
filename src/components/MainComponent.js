@@ -1,20 +1,31 @@
 import React from "react";
+import ItemCard from "./itemCard";
+import data from "../assets/testData";
 import "../styles/maincomponent.css";
+//import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-const Maincomponent = () => {
+const MainComponent = () => {
+  console.warn(data.productData);
   return (
-    <div className="docker">
-      <img
-        src="https://unsplash.com/photos/hidES-ZSnRE"
-        alt="api-not-working"
-      />
-      <div className="text-container">
-        <h4>Name</h4>
-        <h4 className="price-bold">Price</h4>
-        <button>Add to Cart</button>
-      </div>
-    </div>
+    <>
+      <section>
+        <div>
+          {data.productData.map((item, index) => {
+            return (
+              <ItemCard
+                img={item.img}
+                title={item.title}
+                desc={item.desc}
+                price={item.price}
+                item={item}
+                key={index}
+              />
+            );
+          })}
+        </div>
+      </section>
+    </>
   );
 };
 
-export default Maincomponent;
+export default MainComponent;

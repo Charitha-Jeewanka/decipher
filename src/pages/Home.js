@@ -33,13 +33,15 @@ const Home = () => {
         <div className="pasta-description">
           <h3>Best Pasta you can find</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-            consequatur maiores, amet ex repellendus necessitatibus quaerat
-            incidunt vel doloribus doloremque ratione non alias ut illo
-            explicabo odio, magnam inventore natus. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Numquam asperiores eius amet neque
-            perferendis dolores ad unde error minus. Voluptas quibusdam alias
-            corrupti, nostrum quidem voluptatem cum consequuntur quod dicta?
+            The EcoE Bar, which did not stop at the chocolate business, after a
+            long journey in food industry with chocolate, opened a new dimension
+            in the food industry to invade the Europe market, with the passage
+            of time, as an extension of another business and turned to pasta
+            products. As a result, the EcoE Bar is now able to bring you the
+            finest pasta products in a variety of forms. With a wide range of
+            fresh and dry pasta products, you can enjoy a wide range of
+            delicious products. Join the EcoE Bar products and be aware of the
+            difference.
           </p>
         </div>
         <div className="pasta-picture">

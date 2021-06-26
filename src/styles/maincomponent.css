@@ -27,19 +27,30 @@
 }
 
 .docker {
-  background: var(--clr-fonts-5);
+  background: #f8f9fa;
   margin: 25px auto;
   width: 50%;
   text-align: center;
+  align-items: center;
   padding: 10px;
   border-radius: 10px;
   box-shadow: var(--dark-shadow);
+  display: flex;
+}
+.card {
+  width: 300px;
+  border-radius: 5px;
+  margin: 25px;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
-.picture-comp {
-  display: block;
-  margin: auto;
-  size: 25px;
+.card-body {
+  text-align: center;
+  padding: 2px 6px;
 }
 
 button {
@@ -48,14 +59,14 @@ button {
   color: #ffffff;
   font-size: 16px;
   line-height: 25px;
-  padding: 10px 0;
+  padding: 10px 15px;
   text-decoration: none;
   text-shadow: none;
   border-radius: 3px;
   box-shadow: none;
   transition: 0.25s;
   display: block;
-  width: 250px;
+  width: auto;
   margin: 20px auto;
   text-transform: capitalize;
 }
